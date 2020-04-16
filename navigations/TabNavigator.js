@@ -9,6 +9,7 @@ import HomeScreen from '../screens/HomeScreen'
 import ExploreScreen from '../screens/ExploreScreen'
 import SubscriptionScreen from '../screens/SubscriptionScreen'
 import LibraryScreen from '../screens/LibraryScreen'
+import InboxScreen from '../screens/InboxScreen'
 
 const Tab = createBottomTabNavigator()
 const Stack = createStackNavigator()
@@ -63,7 +64,7 @@ const BottomTabs = () => {
           ),
         }}
         name='Inbox'
-        component={HomeScreen}
+        component={InboxScreen}
       />
       <Tab.Screen
         options={{

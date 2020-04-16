@@ -1,8 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, View, FlatList, Picker } from 'react-native'
+import { StyleSheet, Text, View, FlatList } from 'react-native'
 
-import ChannelLists from '../components/ChannelsList'
-import VideoItem from '../components/VideoItem'
+import InboxItem from '../components/InboxItem'
 
 const data = [
   {
@@ -60,41 +59,69 @@ const data = [
     thumbnail:
       'https://cdn.pixabay.com/photo/2017/07/15/19/42/manipulation-smartphone-2507499_960_720.jpg',
   },
+  {
+    id: 'data6',
+    title: 'Photoshop Manipulation Tutorial',
+    channel: 'Pro Editor',
+    avatar:
+      'https://cdn.pixabay.com/photo/2017/08/06/09/03/cameraman-2590491_960_720.jpg',
+    views: '600k',
+    time: '1 week ago',
+    thumbnail:
+      'https://cdn.pixabay.com/photo/2017/07/15/19/42/manipulation-smartphone-2507499_960_720.jpg',
+  },
+  {
+    id: 'data7',
+    title: 'Photoshop Manipulation Tutorial',
+    channel: 'Pro Editor',
+    avatar:
+      'https://cdn.pixabay.com/photo/2017/08/06/09/03/cameraman-2590491_960_720.jpg',
+    views: '600k',
+    time: '1 week ago',
+    thumbnail:
+      'https://cdn.pixabay.com/photo/2017/07/15/19/42/manipulation-smartphone-2507499_960_720.jpg',
+  },
+  {
+    id: 'data8',
+    title: 'Photoshop Manipulation Tutorial',
+    channel: 'Pro Editor',
+    avatar:
+      'https://cdn.pixabay.com/photo/2017/08/06/09/03/cameraman-2590491_960_720.jpg',
+    views: '600k',
+    time: '1 week ago',
+    thumbnail:
+      'https://cdn.pixabay.com/photo/2017/07/15/19/42/manipulation-smartphone-2507499_960_720.jpg',
+  },
+  {
+    id: 'data9',
+    title: 'Photoshop Manipulation Tutorial',
+    channel: 'Pro Editor',
+    avatar:
+      'https://cdn.pixabay.com/photo/2017/08/06/09/03/cameraman-2590491_960_720.jpg',
+    views: '600k',
+    time: '1 week ago',
+    thumbnail:
+      'https://cdn.pixabay.com/photo/2017/07/15/19/42/manipulation-smartphone-2507499_960_720.jpg',
+  },
 ]
 
-const SubscriptionScreen = () => {
+const InboxScreen = () => {
   return (
-    <View>
+    <View style={styles.screen}>
       <FlatList
         showsVerticalScrollIndicator={false}
         data={data}
-        renderItem={({ item }) => <VideoItem item={item} />}
-        ListHeaderComponent={() => (
-          <React.Fragment>
-            <ChannelLists />
-            <View style={styles.select}>
-              <Picker mode='dropdown' style={styles.picker} selectedValue='vap'>
-                <Picker.Item label='Videos and posts' name='vap' />
-                <Picker.Item label='Videos only' name='vo' />
-              </Picker>
-            </View>
-          </React.Fragment>
-        )}
+        renderItem={({ item }) => <InboxItem item={item} />}
       />
     </View>
   )
 }
 
-export default SubscriptionScreen
+export default InboxScreen
 
 const styles = StyleSheet.create({
-  select: {
-    padding: 15,
+  screen: {
     backgroundColor: '#fff',
-    fontFamily: 'roboto',
-  },
-  picker: {
-    width: 200,
-    height: 20,
+    padding: 4,
   },
 })
