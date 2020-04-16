@@ -7,7 +7,7 @@ const Stack = createStackNavigator()
 
 const MainStack = () => {
   return (
-    <Stack.Navigator screenOptions={{}} headerMode='none'>
+    <Stack.Navigator headerMode='none'>
       <Stack.Screen name='tabs' component={BottomTabs} />
       <Stack.Screen name='videos' component={BottomTabs} />
     </Stack.Navigator>

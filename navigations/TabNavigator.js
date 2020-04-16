@@ -95,12 +95,12 @@ export default () => (
           <Ionicons name='logo-youtube' size={30} color={colors.primary} />
           <Text
             style={{
-              fontWeight: 'bold',
-              fontSize: 20,
+              fontSize: 24,
               padding: 5,
+              fontFamily: 'pathway',
             }}
           >
-            YOUTUBE
+            YouTube
           </Text>
         </View>
       ),
@@ -109,7 +109,7 @@ export default () => (
           <View
             style={{
               flexDirection: 'row',
-              padding: 10,
+              paddingHorizontal: 10,
             }}
           >
             <Text style={{ marginLeft: 15 }}>
