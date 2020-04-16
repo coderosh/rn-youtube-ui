@@ -10,7 +10,7 @@ const data = [
     channel: 'MKB720p',
     avatar:
       'https://cdn.pixabay.com/photo/2016/04/25/07/15/man-1351317_960_720.png',
-    views: '930k',
+    views: '350k',
     time: '1 day ago',
     thumbnail:
       'https://cdn.pixabay.com/photo/2016/05/07/05/13/china-1377067_960_720.jpg',
@@ -21,7 +21,7 @@ const data = [
     channel: 'Coder Queen',
     avatar:
       'https://cdn.pixabay.com/photo/2015/12/22/20/42/face-1104763_960_720.jpg',
-    views: '930k',
+    views: '1.2M',
     time: '1 day ago',
     thumbnail:
       'https://cdn.pixabay.com/photo/2016/03/09/09/17/computer-1245714_960_720.jpg',
@@ -43,7 +43,7 @@ const data = [
     channel: 'Gelena Somez',
     avatar:
       'https://cdn.pixabay.com/photo/2016/01/14/06/09/guitar-1139397_960_720.jpg',
-    views: '930k',
+    views: '5.9M',
     time: '1 week ago',
     thumbnail:
       'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_960_720.jpg',
@@ -54,7 +54,7 @@ const data = [
     channel: 'Pro Editor',
     avatar:
       'https://cdn.pixabay.com/photo/2017/08/06/09/03/cameraman-2590491_960_720.jpg',
-    views: '930k',
+    views: '600k',
     time: '1 week ago',
     thumbnail:
       'https://cdn.pixabay.com/photo/2017/07/15/19/42/manipulation-smartphone-2507499_960_720.jpg',

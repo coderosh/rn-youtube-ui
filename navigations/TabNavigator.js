@@ -1,5 +1,5 @@
 import React from 'react'
-import { TouchableOpacity, View, Text } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { createStackNavigator } from '@react-navigation/stack'
 import { MaterialIcons, Ionicons } from '@expo/vector-icons'
@@ -86,22 +86,28 @@ export default () => (
   <Stack.Navigator
     screenOptions={{
       headerTitle: () => (
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-          }}
-        >
-          <Ionicons name='logo-youtube' size={30} color={colors.primary} />
-          <Text
-            style={{
-              fontSize: 24,
-              padding: 5,
-              fontFamily: 'pathway',
-            }}
-          >
-            YouTube
-          </Text>
+        // <View
+        //   style={{
+        //     flexDirection: 'row',
+        //     alignItems: 'center',
+        //   }}
+        // >
+        //   <Ionicons name='logo-youtube' size={30} color={colors.primary} />
+        //   <Text
+        //     style={{
+        //       fontSize: 24,
+        //       padding: 5,
+        //       fontFamily: 'pathway',
+        //     }}
+        //   >
+        //     YouTube
+        //   </Text>
+        // </View>
+        <View>
+          <Image
+            source={require('../assets/ytlogo.png')}
+            style={{ resizeMode: 'contain', width: 100 }}
+          />
         </View>
       ),
       headerRight: (props) => {
@@ -112,19 +118,19 @@ export default () => (
               paddingHorizontal: 10,
             }}
           >
-            <Text style={{ marginLeft: 15 }}>
+            <TouchableOpacity style={{ marginLeft: 15 }}>
               <MaterialIcons name='videocam' size={24} color={colors.grey} />
-            </Text>
-            <Text style={{ marginLeft: 15 }}>
+            </TouchableOpacity>
+            <TouchableOpacity style={{ marginLeft: 15 }}>
               <MaterialIcons name='search' size={24} color={colors.grey} />
-            </Text>
-            <Text style={{ marginLeft: 15 }}>
+            </TouchableOpacity>
+            <TouchableOpacity style={{ marginLeft: 15 }}>
               <MaterialIcons
                 name='account-circle'
                 size={24}
                 color={colors.grey}
               />
-            </Text>
+            </TouchableOpacity>
           </View>
         )
       },
