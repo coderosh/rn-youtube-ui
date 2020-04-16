@@ -6,6 +6,7 @@ import {
   FlatList,
   Text,
   TouchableOpacity,
+  SafeAreaView,
 } from 'react-native'
 import ExploreItem from '../components/ExploreItem'
 import VideoItem from '../components/VideoItem'
@@ -70,33 +71,40 @@ const data = [
 
 const ExploreScreen = () => {
   return (
-    <ScrollView style={styles.screen}>
-      <View style={styles.items}>
-        <ExploreItem
-          text='Music'
-          icon='music'
-          image='https://cdn.pixabay.com/photo/2017/08/06/12/54/headphones-2592263_960_720.jpg'
-        />
-        <ExploreItem
-          text='Gaming'
-          icon='youtube-gaming'
-          image='https://cdn.pixabay.com/photo/2017/04/05/22/52/xbox-one-controller-2206687_960_720.jpg'
-        />
-      </View>
-      <View style={{ elevation: 5 }}>
-        <View style={styles.trendingItem}>
-          <Text style={styles.trendingText}>Trending videos</Text>
-          <TouchableOpacity>
-            <Text style={styles.seeAll}>SEE ALL</Text>
-          </TouchableOpacity>
-        </View>
-        <FlatList
-          data={data}
-          keyExtractor={(item) => item.id}
-          renderItem={(itemData) => <VideoItem item={itemData.item} />}
-        />
-      </View>
-    </ScrollView>
+    <View style={styles.screen}>
+      <FlatList
+        data={data}
+        showsVerticalScrollIndicator={false}
+        keyExtractor={(item) => item.id}
+        renderItem={(itemData) => <VideoItem item={itemData.item} />}
+        ListHeaderComponent={() => {
+          return (
+            <React.Fragment>
+              <View style={styles.items}>
+                <ExploreItem
+                  text='Music'
+                  icon='music'
+                  image='https://cdn.pixabay.com/photo/2017/08/06/12/54/headphones-2592263_960_720.jpg'
+                />
+                <ExploreItem
+                  text='Gaming'
+                  icon='youtube-gaming'
+                  image='https://cdn.pixabay.com/photo/2017/04/05/22/52/xbox-one-controller-2206687_960_720.jpg'
+                />
+              </View>
+              <View style={{ elevation: 5 }}>
+                <View style={styles.trendingItem}>
+                  <Text style={styles.trendingText}>Trending videos</Text>
+                  <TouchableOpacity>
+                    <Text style={styles.seeAll}>SEE ALL</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </React.Fragment>
+          )
+        }}
+      />
+    </View>
   )
 }
 

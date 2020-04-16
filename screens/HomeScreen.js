@@ -11,7 +11,7 @@ const data = [
     avatar:
       'https://cdn.pixabay.com/photo/2016/04/25/07/15/man-1351317_960_720.png',
     views: '350k',
-    time: '1 day ago',
+    time: '3 days ago',
     thumbnail:
       'https://cdn.pixabay.com/photo/2016/05/07/05/13/china-1377067_960_720.jpg',
   },
@@ -66,6 +66,7 @@ const HomeScreen = () => {
     <View style={{ backgroundColor: '#fff' }}>
       <FlatList
         data={data}
+        showsVerticalScrollIndicator={false}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <VideoItem item={item} />}
       />

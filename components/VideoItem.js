@@ -25,9 +25,11 @@ const VideoItem = (props) => {
           <View style={styles.textContainer}>
             <Text style={styles.title}>{props.item.title}</Text>
             <View style={styles.infoContainer}>
-              <Text style={styles.info}>{props.item.channel}</Text>
-              <Text style={styles.info}>{props.item.views} views</Text>
-              <Text style={styles.info}>{props.item.time}</Text>
+              <Text style={styles.info}>
+                {props.item.channel} · {props.item.views} · {props.item.time}
+              </Text>
+              {/* <Text style={styles.info}>{props.item.views} views</Text>
+              <Text style={styles.info}>{props.item.time}</Text> */}
             </View>
           </View>
         </View>
