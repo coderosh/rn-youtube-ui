@@ -27,7 +27,8 @@ const VideoItem = (props) => {
             <Text style={styles.title}>{props.item.title}</Text>
             <View style={styles.infoContainer}>
               <Text style={styles.info}>
-                {props.item.channel} · {props.item.views} · {props.item.time}
+                {props.item.channel} · {props.item.views} views ·{' '}
+                {props.item.time}
               </Text>
             </View>
           </View>

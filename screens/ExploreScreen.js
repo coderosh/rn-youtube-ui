@@ -13,37 +13,34 @@ import VideoItem from '../components/VideoItem'
 
 const data = [
   {
-    id: 'data1',
-    title: 'OnePlus 8 Review: Better than S20 Ultra ?',
-    channel: 'MKB720p',
-    avatar:
-      'https://cdn.pixabay.com/photo/2016/04/25/07/15/man-1351317_960_720.png',
-    views: '350k',
-    time: '1 day ago',
+    id: 'data2',
+    title: 'Impossible - Shontelle (Cover)',
+    channel: 'Blessinger',
+    avatar: 'https://randomuser.me/api/portraits/men/98.jpg',
+    views: '119M',
+    time: '1 month ago',
     thumbnail:
-      'https://cdn.pixabay.com/photo/2016/05/07/05/13/china-1377067_960_720.jpg',
+      'https://cdn.pixabay.com/photo/2016/09/10/11/11/musician-1658887_960_720.jpg',
   },
   {
-    id: 'data2',
-    title: 'Where Do I Work | My Coding Setup',
-    channel: 'Coder Queen',
-    avatar:
-      'https://cdn.pixabay.com/photo/2015/12/22/20/42/face-1104763_960_720.jpg',
-    views: '1.2M',
-    time: '1 day ago',
+    id: 'data1',
+    title: 'Mobile Photography | Complete Tutorial for begineers',
+    channel: 'Photo Queen',
+    avatar: 'https://randomuser.me/api/portraits/women/21.jpg',
+    views: '100M',
+    time: '3 weeks ago',
     thumbnail:
-      'https://cdn.pixabay.com/photo/2016/03/09/09/17/computer-1245714_960_720.jpg',
+      'https://cdn.pixabay.com/photo/2016/02/10/16/39/girl-1192032_960_720.jpg',
   },
   {
     id: 'data3',
-    title: 'Garbage or Treasure: Worth 20k $',
-    channel: 'Hasdeli',
-    avatar:
-      'https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083383_960_720.jpg',
-    views: '930k',
-    time: '1 day ago',
+    title: 'Closer - Chainsmokers (Cover)',
+    channel: 'TheProGuitarist',
+    avatar: 'https://randomuser.me/api/portraits/men/81.jpg',
+    views: '99M',
+    time: '2 weeks ago',
     thumbnail:
-      'https://cdn.pixabay.com/photo/2012/12/19/18/12/scrapyard-70908_960_720.jpg',
+      'https://cdn.pixabay.com/photo/2014/05/21/15/18/musician-349790_960_720.jpg',
   },
   {
     id: 'data4',
@@ -51,7 +48,7 @@ const data = [
     channel: 'Gelena Somez',
     avatar:
       'https://cdn.pixabay.com/photo/2016/01/14/06/09/guitar-1139397_960_720.jpg',
-    views: '5.9M',
+    views: '50.9M',
     time: '1 week ago',
     thumbnail:
       'https://cdn.pixabay.com/photo/2018/06/17/10/38/artist-3480274_960_720.jpg',
@@ -62,7 +59,7 @@ const data = [
     channel: 'Pro Editor',
     avatar:
       'https://cdn.pixabay.com/photo/2017/08/06/09/03/cameraman-2590491_960_720.jpg',
-    views: '600k',
+    views: '40M',
     time: '1 week ago',
     thumbnail:
       'https://cdn.pixabay.com/photo/2017/07/15/19/42/manipulation-smartphone-2507499_960_720.jpg',
