@@ -7,6 +7,7 @@ import {
   Image,
 } from 'react-native'
 import colors from '../constants/colors'
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 const VideoItem = (props) => {
   return (
@@ -28,9 +29,18 @@ const VideoItem = (props) => {
               <Text style={styles.info}>
                 {props.item.channel} · {props.item.views} · {props.item.time}
               </Text>
-              {/* <Text style={styles.info}>{props.item.views} views</Text>
-              <Text style={styles.info}>{props.item.time}</Text> */}
             </View>
+          </View>
+          <View
+            style={{
+              alignItems: 'flex-end',
+            }}
+          >
+            <MaterialCommunityIcons
+              name='dots-vertical'
+              color={colors.grey}
+              size={20}
+            />
           </View>
         </View>
       </View>
@@ -60,6 +70,7 @@ const styles = StyleSheet.create({
     minHeight: 60,
     marginHorizontal: 10,
     marginTop: 10,
+    justifyContent: 'space-between',
   },
   avatarContainer: {
     height: 50,
@@ -76,6 +87,7 @@ const styles = StyleSheet.create({
   textContainer: {
     minHeight: '90%',
     flexShrink: 1,
+    flex: 2,
   },
   title: {
     fontSize: 15,
