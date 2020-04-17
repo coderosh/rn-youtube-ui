@@ -17,8 +17,7 @@ const InboxItem = (props) => {
           <Image style={styles.avatar} source={{ uri: props.item.avatar }} />
           <View style={styles.textContainer}>
             <Text>
-              {props.item.channel} Uploaded: Creating an awesome youtube clone
-              in reat native
+              {props.item.channel} Uploaded: {props.item.title}
             </Text>
             <Text style={styles.time}>{props.item.time}</Text>
           </View>
